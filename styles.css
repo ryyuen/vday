@@ -1,18 +1,33 @@
-body {
-  font-family: 'Arial', sans-serif;
-  background: linear-gradient(to bottom, #ffb3b3, #b3d9ff);
+* {
   margin: 0;
   padding: 0;
-  text-align: center;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  background: linear-gradient(to bottom, #ffb3b3, #b3d9ff);
   color: #333;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .poem-container {
-  padding: 50px;
+  max-width: 600px; /* To control the width of the poem */
+  padding: 20px;
+  overflow-y: auto;
+  text-align: left;
 }
 
 .poem {
-  margin: 20px 0;
+  margin-bottom: 20px;
   font-size: 22px;
   line-height: 1.8;
 }
